@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>山脊烘焙故事站 · Roast Story Station</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#/">
+    <span class="brand-mark">◳</span>
+    <span><b>山脊烘焙故事站</b><small>Roast Story Station</small></span>
+  </a>
+  <nav class="site-nav" id="nav">
+    <a href="#/">故事首页</a>
+    <a href="#/origins">产地</a>
+    <a href="#/processes">处理法</a>
+    <a href="#/compare">曲线比较</a>
+    <a href="#/events">活动</a>
+    <a href="#/glossary">术语</a>
+    <a href="#/admin" class="nav-admin">管理</a>
+  </nav>
+</header>
+<main id="app" class="container"><div class="loading">正在烘焙…</div></main>
+
+<footer class="site-footer">
+  <div>山脊咖啡 · 烘焙透明化实验项目</div>
+  <div class="footer-links">
+    <a href="#/design">站内设计说明</a>
+    <span>曲线测点文件独立存储 · PostgreSQL 保存测量元数据与感官评语 · 下载可追原数据</span>
+  </div>
+</footer>
+
+<div id="toast" class="toast hidden"></div>
+<script src="/app.js"></script>
+</body>
+</html>

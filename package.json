@@ -1,0 +1,21 @@
+{
+  "name": "roast-story-station",
+  "version": "1.0.0",
+  "description": "咖啡烘焙故事站：产地/处理法、批次谱系与曲线、感官评语、活动联动",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "initdb": "node scripts/initdb.js",
+  "seed": "node scripts/seed.js",
+    "reset": "rm -rf .pglite storage/curves/* storage/bundles/* && node scripts/initdb.js && node scripts/seed.js",
+    "test": "node test/e2e.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.12",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.0"
+  }
+}
